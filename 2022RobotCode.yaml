@@ -224,10 +224,10 @@ Properties:
       Number, validators: null, value: 4229}
   Export Subsystems: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Subsystems, validators: null, value: true}
-  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Productivity\',
-    extension: null, folder: true, name: Wiring file location, validators: null, value: 'C:\Users\Productivity\Documents\GitHub\2022RobotCode'}
-  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Productivity\FRCProjects',
-    extension: null, folder: true, name: Export Directory, validators: null, value: 'C:\Users\Productivity\Documents\GitHub'}
+  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\robotics\',
+    extension: null, folder: true, name: Wiring file location, validators: null, value: 'C:\Users\robotics\Documents\GitHub\RobotCode2022'}
+  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\robotics\FRCProjects',
+    extension: null, folder: true, name: Export Directory, validators: null, value: 'C:\Users\robotics\Documents\GitHub\RobotCode2022'}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
 Base: Robot
