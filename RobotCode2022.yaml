@@ -30,7 +30,7 @@ Children:
             validators: null
             value: kBrushless
           Restore Factory Defaults: !!robotbuilder.data.properties.BooleanProperty {
-            default: true, name: Restore Factory Defaults, validators: null, value: true}
+            default: true, name: Restore Factory Defaults, validators: null, value: false}
         Base: Spark MAX
         Name: rightRearMC
       - Children: []
@@ -56,7 +56,7 @@ Children:
             validators: null
             value: kBrushless
           Restore Factory Defaults: !!robotbuilder.data.properties.BooleanProperty {
-            default: true, name: Restore Factory Defaults, validators: null, value: true}
+            default: true, name: Restore Factory Defaults, validators: null, value: false}
         Base: Spark MAX
         Name: rightFrontMC
       - Children: []
@@ -74,7 +74,7 @@ Children:
             default: '2'
             name: CAN ID
             validators: *id003
-            value: '1'
+            value: '4'
           MOTOR TYPE: !!robotbuilder.data.properties.ChoicesProperty
             choices: *id004
             default: kBrushless
@@ -82,7 +82,7 @@ Children:
             validators: null
             value: kBrushless
           Restore Factory Defaults: !!robotbuilder.data.properties.BooleanProperty {
-            default: true, name: Restore Factory Defaults, validators: null, value: true}
+            default: true, name: Restore Factory Defaults, validators: null, value: false}
         Base: Spark MAX
         Name: leftRearMC
       - Children: []
@@ -100,7 +100,7 @@ Children:
             default: '2'
             name: CAN ID
             validators: *id003
-            value: '0'
+            value: '5'
           MOTOR TYPE: !!robotbuilder.data.properties.ChoicesProperty
             choices: *id004
             default: kBrushless
@@ -108,7 +108,7 @@ Children:
             validators: null
             value: kBrushless
           Restore Factory Defaults: !!robotbuilder.data.properties.BooleanProperty {
-            default: true, name: Restore Factory Defaults, validators: null, value: true}
+            default: true, name: Restore Factory Defaults, validators: null, value: false}
         Base: Spark MAX
         Name: leftFrontMC
       Properties:
@@ -256,9 +256,9 @@ Properties:
       Number, validators: null, value: 4229}
   Export Subsystems: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Subsystems, validators: null, value: true}
-  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\robotics\',
+  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Robotics\',
     extension: null, folder: true, name: Wiring file location, validators: null, value: 'C:\Users\robotics\Documents\GitHub'}
-  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\robotics\FRCProjects',
+  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Robotics\FRCProjects',
     extension: null, folder: true, name: Export Directory, validators: null, value: 'C:\Users\robotics\Documents\GitHub'}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
