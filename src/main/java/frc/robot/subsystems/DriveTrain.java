@@ -55,25 +55,25 @@ private AnalogGyro analogGyro1;
 rightRearMC = new CANSparkMax(2, MotorType.kBrushless);
  
    
-rightRearMC.setInverted(false);
+rightRearMC.setInverted(true);
 rightRearMC.setIdleMode(IdleMode.kCoast);
   
 
 rightFrontMC = new CANSparkMax(3, MotorType.kBrushless);
  
    
-rightFrontMC.setInverted(false);
+rightFrontMC.setInverted(true);
 rightFrontMC.setIdleMode(IdleMode.kCoast);
   
 
-leftRearMC = new CANSparkMax(4, MotorType.kBrushless);
+leftRearMC = new CANSparkMax(5, MotorType.kBrushless);
  
    
 leftRearMC.setInverted(false);
 leftRearMC.setIdleMode(IdleMode.kCoast);
   
 
-leftFrontMC = new CANSparkMax(5, MotorType.kBrushless);
+leftFrontMC = new CANSparkMax(4, MotorType.kBrushless);
  
    
 leftFrontMC.setInverted(false);
@@ -112,6 +112,12 @@ mecanumDrive1.setDeadband(.3);
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
+    /**
+     * Drive the robot according to the parameters
+     * @param ySpeed forward and backward speed, forward is positive
+     * @param xSpeed left and right speed, right is positive
+     * @param zRotation rotating speed, clockwise is positive
+     */
     public void driveRobot(double ySpeed, double xSpeed, double zRotation){
         //This MathUtil Code was copied from wpilib driveCartesian
         //The default driveCartesian doesn't apply the deadband to zRotation.

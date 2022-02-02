@@ -57,8 +57,8 @@ public class DriveRobot extends CommandBase {
     @Override
     public void execute() {
         XboxController xbox = RobotContainer.getInstance().getXboxController1();
-        
-        m_driveTrain.driveRobot(xbox.getLeftY(), xbox.getLeftX(), xbox.getRightX());
+        //The y is flipped becuase xbox controller gives a negative for forward
+        m_driveTrain.driveRobot(-xbox.getLeftY(), xbox.getLeftX(), xbox.getRightX());
     }
 
     // Called once the command ends or is interrupted.
