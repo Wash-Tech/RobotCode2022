@@ -21,8 +21,6 @@ import edu.wpi.first.math.MathUtil;
 import com.revrobotics.CANSparkMax.IdleMode;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
-
-
 import edu.wpi.first.wpilibj.AnalogGyro;
 import edu.wpi.first.wpilibj.drive.MecanumDrive;
 
@@ -55,25 +53,25 @@ private AnalogGyro analogGyro1;
 rightRearMC = new CANSparkMax(2, MotorType.kBrushless);
  
    
-rightRearMC.setInverted(true);
+rightRearMC.setInverted(false);
 rightRearMC.setIdleMode(IdleMode.kCoast);
   
 
 rightFrontMC = new CANSparkMax(3, MotorType.kBrushless);
  
    
-rightFrontMC.setInverted(true);
+rightFrontMC.setInverted(false);
 rightFrontMC.setIdleMode(IdleMode.kCoast);
   
 
-leftRearMC = new CANSparkMax(5, MotorType.kBrushless);
+leftRearMC = new CANSparkMax(4, MotorType.kBrushless);
  
    
 leftRearMC.setInverted(false);
 leftRearMC.setIdleMode(IdleMode.kCoast);
   
 
-leftFrontMC = new CANSparkMax(4, MotorType.kBrushless);
+leftFrontMC = new CANSparkMax(5, MotorType.kBrushless);
  
    
 leftFrontMC.setInverted(false);
