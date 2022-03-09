@@ -57,7 +57,7 @@ public class SpinIntake extends CommandBase {
      */
     @Override
     public void execute() {
-        m_intake.spin(0.5);
+        m_intake.spin(0.75);
     }
 
     // Called once the command ends or is interrupted.
