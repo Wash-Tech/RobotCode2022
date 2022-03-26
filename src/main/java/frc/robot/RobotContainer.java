@@ -117,7 +117,7 @@ final JoystickButton shooterButton = new JoystickButton(xboxController1, XboxCon
 shooterButton.whileHeld(new SpinShooter( m_shooter ) ,true);
     SmartDashboard.putData("ShooterButton",new SpinShooter( m_shooter ) );
 
-final JoystickButton storageConveyorButton = new JoystickButton(xboxController1, XboxController.Button.kB.value);        
+final JoystickButton storageConveyorButton = new JoystickButton(xboxController1, XboxController.Button.kX.value);        
 storageConveyorButton.whileHeld(new SpinConveyor( m_ballStorage ) ,true);
     SmartDashboard.putData("StorageConveyorButton",new SpinConveyor( m_ballStorage ) );
 
