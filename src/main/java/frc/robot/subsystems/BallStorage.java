@@ -81,8 +81,8 @@ storageConveyor2.setIdleMode(IdleMode.kCoast);
      * @param speed how fast the conveyor spins (-1 to 1)
      */
     public void spinConveyor(double speed) {
-        storageConveyor.set(speed);
-        storageConveyor2.set(speed);
+        storageConveyor.set(-speed);
+        storageConveyor2.set(-speed);
     }
 
 }
