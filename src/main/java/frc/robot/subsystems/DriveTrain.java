@@ -59,7 +59,7 @@ rightRearMC.setIdleMode(IdleMode.kCoast);
 
 rightFrontMC = new CANSparkMax(3, MotorType.kBrushless);
  
-
+   
 rightFrontMC.setInverted(true);
 rightFrontMC.setIdleMode(IdleMode.kCoast);
   
