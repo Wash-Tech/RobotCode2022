@@ -76,6 +76,16 @@ climberPull.setIdleMode(IdleMode.kCoast);
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
+    /**
+     * spins the ball storage conveyor
+     * @param speed how fast the conveyor spins (-1 to 1)
+     */
+    public void spinClimberExtend(double speed) {
+        climberExtend.set(speed);
+    }
 
+    public void spinClimberPull(double speed) {
+        climberPull.set(speed);
+    }
 }
 
