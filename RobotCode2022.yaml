@@ -331,6 +331,76 @@ Children:
         value: []
     Base: Subsystem
     Name: Shooter
+  - Children:
+    - Children: []
+      Properties:
+        Idle Mode: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id001
+          default: kCoast
+          name: Idle Mode
+          validators: null
+          value: kCoast
+        Inverted: !!robotbuilder.data.properties.BooleanProperty {default: false,
+          name: Inverted, validators: null, value: false}
+        CAN ID: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id002
+          default: '2'
+          name: CAN ID
+          validators: *id003
+          value: '11'
+        MOTOR TYPE: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id004
+          default: kBrushless
+          name: MOTOR TYPE
+          validators: null
+          value: kBrushed
+        Restore Factory Defaults: !!robotbuilder.data.properties.BooleanProperty {
+          default: true, name: Restore Factory Defaults, validators: null, value: true}
+      Base: Spark MAX
+      Name: ClimberExtend
+    - Children: []
+      Properties:
+        Idle Mode: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id001
+          default: kCoast
+          name: Idle Mode
+          validators: null
+          value: kCoast
+        Inverted: !!robotbuilder.data.properties.BooleanProperty {default: false,
+          name: Inverted, validators: null, value: false}
+        CAN ID: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id002
+          default: '2'
+          name: CAN ID
+          validators: *id003
+          value: '12'
+        MOTOR TYPE: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id004
+          default: kBrushless
+          name: MOTOR TYPE
+          validators: null
+          value: kBrushed
+        Restore Factory Defaults: !!robotbuilder.data.properties.BooleanProperty {
+          default: true, name: Restore Factory Defaults, validators: null, value: true}
+      Base: Spark MAX
+      Name: ClimberPull
+    Properties:
+      Send to SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Send to SmartDashboard, validators: null, value: true}
+      Default command parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Default command parameters
+        validators: null
+        value: []
+      Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Default Command, type: Command, validators: null, value: None}
+      Constants: !!robotbuilder.data.properties.ConstantsProperty
+        default: []
+        name: Constants
+        validators: null
+        value: []
+    Base: Subsystem
+    Name: Climber
   Properties: {}
   Base: Subsystems
   Name: Subsystems
