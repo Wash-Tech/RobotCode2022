@@ -122,7 +122,8 @@ mecanumDrive1.setDeadband(.3);
         //This code fixes that by applying it right before zRotation is passed to driveCartesian
         zRotation = MathUtil.applyDeadband(zRotation, 0.3);
 
-        mecanumDrive1.driveCartesian(ySpeed, xSpeed, zRotation, analogGyro1.getAngle());
+        //mecanumDrive1.driveCartesian(ySpeed, xSpeed, zRotation, analogGyro1.getAngle());
+        mecanumDrive1.driveCartesian(ySpeed, xSpeed, zRotation);
     }
 }
 
