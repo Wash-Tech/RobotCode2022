@@ -54,7 +54,7 @@ public class ExtendCommand extends CommandBase {
     // Called every time the scheduler runs while the command is scheduled.
     @Override
     public void execute() {
-        m_climber.extend(0.5);
+        m_climber.extend(0.75);
     }
 
     // Called once the command ends or is interrupted.

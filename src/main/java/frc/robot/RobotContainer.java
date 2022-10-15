@@ -166,7 +166,7 @@ public XboxController getXboxController1() {
   public Command getAutonomousCommand() {
     return new SequentialCommandGroup(
         new DriveRobotAutonomous(m_driveTrain).withTimeout(2),
-        new SpinShooter(m_shooter).withTimeout(3),
+        new SpinShooter(m_shooter).withTimeout(3.4),
         new SpinConveyor(m_ballStorage).withTimeout(2)
         //m_chooser.getSelected()
     );
